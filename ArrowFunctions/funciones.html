@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<input>
+    
+    <input type = "text" id="txtValor1"></input>
+    <input type = "text" id="txtValor1"></input>
+    <input type = "button" value="SUMAR" onclick="ejecutar(sumar)"></input>
+    <input type = "button" value="SUMAR" onclick="ejecutar(restar)"></input>
+    <input type = "button" value="BUSCAR MENOR" onclick="ejecutar(buscarMenor)"></input>
+    <input type = "button" value="BUSCAR MENOR ANONIMA" onclick="ejecutar((x,y) => {
+        if(x<y){
+            alert('el menor es: ' + x);
+        }
+        else{
+            alert('el menor es: ' + y);
+        }   
+    })"/>
+    <input type = "button" value="MULTIPLICAR" onclick="ejecutar((z,v) => {
+        let resultado = z*v;
+        alert('la multiplicacion es: ' + resultado);
+    })"></input>
+</body>
+</html>
